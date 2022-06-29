@@ -1,0 +1,89 @@
+
+#Log1,
+#Log2,
+#Log3,
+#Log4,
+#Log5,
+#Log6{
+    display: flex;
+    width:18rem;
+    height: 3rem;
+    /* height: 3rem; */
+    padding-right: 1rem;
+    /* position:relative; */
+    border-radius: 20px;
+}
+#Log1::after,
+#Log2::after,
+#Log3::after,
+#Log4::after,
+#Log5::after,
+#Log6::after{
+    content: '';
+    position: absolute;
+    width:18rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: right 30px top -8px;
+    border-radius: 20px;
+    z-index: 3;
+}
+#Log1::after{
+    background-image: url('../images/icon-work.svg')
+}
+#Log2::after{
+    background-image: url('../images/icon-play.svg')
+}
+#Log3::after{
+    background-image: url('../images/icon-study.svg')
+}
+#Log4::after{
+    background-image: url('../images/icon-exercise.svg')
+}
+#Log5::after{
+    background-image: url('../images/icon-social.svg')
+}
+#Log6::after{
+    background-image: url('../images/icon-self-care.svg')
+}
+
+#Log1::before,
+#Log2::before,
+#Log3::before,
+#Log4::before,
+#Log5::before,
+#Log6::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:18rem;
+    height: 100%;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+#Log1::before{
+    background-color: hsl(15, 100%, 70%);
+}
+#Log2::before{
+    background-color: hsl(195, 74%, 62%)
+}
+#Log3::before{
+    background-color: hsl(348, 100%, 68%);
+}
+#Log4::before{
+    background-color: hsl(145, 58%, 55%);
+}
+#Log5::before{
+    background-color: hsl(264, 64%, 52%);
+}
+#Log6::before{
+    background-color: hsl(43, 84%, 65%);
+}
+/* .info-container{
+
+}
+.carda{
+   
+} */
